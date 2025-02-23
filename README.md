@@ -6,14 +6,14 @@
 | **yum** | `yum search <package>` | `yum install <package>` | `yum remove <package>` | `yum update` `yum check-update <pacakge>` | `yum list installed` | `yum info <package>` | `yum whatprovides <file>` |
 | **dnf** | `dnf search <package>` | `dnf install <package>` | `dnf remove <package>` | `dnf update` | `dnf list --installed` | `dnf info <package>` | `dnf provides <file>` |
 | **zypper** | `zypper search <package>` `zypper se <package>` | `zypper install <package>` `zypper in <package>`| `zypper remove <package>` | `zypper refresh` | `zypper list installed` | `zypper info <package>` | `zypper se --provides <file>` |
-
+<!--
 | **Package Manager** | **Add Repository** | **Remove Repository** | **List Repositories** | **Enable/Disable Repository** |
 |---------------------|------------------|------------------|------------------|------------------|
 | **apt** | `add-apt-repository <repo>` / `echo 'deb <repo>' | tee /etc/apt/sources.list.d/<repo>.list` | `add-apt-repository --remove <repo>` / `rm /etc/apt/sources.list.d/<repo>.list` | `apt-cache policy` / `apt list --all-versions` | N/A |
 | **yum** | `yum-config-manager --add-repo <repo>` | `yum-config-manager --remove <repo>` | `yum repolist all` | `yum-config-manager --enable <repo>` / `yum-config-manager --disable <repo>` / `yum-config-manager --enable updates` |
 | **dnf** | `dnf config-manager --add-repo <repo>` | `dnf config-manager --remove <repo>` | `dnf repolist` | `dnf config-manager --set-enabled <repo>` / `dnf config-manager --set-disabled <repo>` |
 | **zypper** | `zypper addrepo <repo> <alias>` | `zypper removerepo <alias>` | `zypper repos` | `zypper mr -e <alias>` / `zypper mr -d <alias>` |
-
+-->
 
 | **Package Manager** | **Add Repository** | **Remove Repository** | **List Repositories** | **Enable/Disable Repository** | **Repository Configuration Path** |
 |---------------------|------------------|------------------|------------------|------------------|------------------|
