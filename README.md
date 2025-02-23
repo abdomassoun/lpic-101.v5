@@ -59,21 +59,6 @@
 | `<<`        | **Here-document**: Multi-line input | `cat <<EOF`<br>`Hello`<br>`World`<br>`EOF` | Redirects multiple lines of input to a command. |
 | `<<<`       | **Here-string**: Single-line input | `grep "pattern" <<< "search this line"` | Passes a string directly as stdin to a command. |
 
-| **Symbol**  | **Description** | **Example** | **Usage** |
-|-------------|-----------------|-------------|-----------|
-| `>`         | Redirects stdout (overwrite) | `ls > output.txt` | Writes command output to a file, overwriting it. |
-| `>>`        | Redirects stdout (append) | `echo "Hello" >> file.txt` | Appends output to an existing file. |
-| `<`         | Redirects stdin from a file | `sort < file.txt` | Reads input from a file instead of the keyboard. |
-| `2>`        | Redirects stderr (overwrite) | `ls /fakepath 2> error.txt` | Saves error messages to a file, overwriting it. |
-| `2>>`       | Redirects stderr (append) | `ls /fakepath 2>> error.log` | Appends error messages to a file. |
-| `&>`        | Redirects stdout & stderr (overwrite) | `command &> output.txt` | Saves both output and errors to a file. |
-| `2>&1`      | Merges stderr into stdout | `command > file.txt 2>&1` | Combines both outputs into one file. |
-| `|`         | Pipe: Sends stdout of one command to stdin of another | `ls -l | less` | Passes data between commands. |
-| `tee`       | Sends output to both a file and stdout | `ls | tee file.txt` | Saves output to a file while displaying it. |
-| `/dev/null` | Discards output (black hole) | `command > /dev/null 2>&1` | Runs a command but ignores all output. |
-| `<<`        | **Here-document**: Multi-line input | `cat <<EOF`<br>`Hello`<br>`World`<br>`EOF` | Redirects multiple lines of input to a command. |
-| `<<<`       | **Here-string**: Single-line input | `grep "pattern" <<< "search this line"` | Passes a string directly as stdin to a command. |
-
 
 ### **Summary of GRUB 2 Installation and Configuration**
 
